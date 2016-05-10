@@ -1,9 +1,9 @@
-package TextFizzBuzz;
+package net.iessanclemente.a13marcosvg.TextFizzBuzz;
+
+import net.iessanclemente.a13marcosvg.KataFizzBuzz.FizzBuzz;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import FizzBuzz.FizzBuzz;
 
 public class TextFizzBuzz {
 
