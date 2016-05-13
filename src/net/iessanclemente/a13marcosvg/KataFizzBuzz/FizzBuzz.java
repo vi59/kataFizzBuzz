@@ -11,7 +11,7 @@ public class FizzBuzz {
 		{
 			return "FizzBuzz";
 		}
-		else if(isMultipleOf3(number)) // si el parametro es multiplo de 3 devolverá Fizz
+		else if (isMultipleOf3(number) || Integer.toString(number).contains("3")) // si el parametro es multiplo de 3 devolverá Fizz o contiene un 3 devolverá Fizz
 		{
 			return "Fizz";
 		}
@@ -26,7 +26,7 @@ public class FizzBuzz {
 	 * Metodo que comprueba si un numero es divisible por 5
 	 * @param number numero introducido como parametro
 	 * @return devuelve true si es divisible por 5 si no false
-	 * */
+	 */
 		
 	private boolean isMultipleOf5(int number) {
 		return number %5 == 0;
@@ -36,7 +36,7 @@ public class FizzBuzz {
 	 * Metodo que comprueba si un numero es divisible por 3
 	 * @param number numero introducido como parametro
 	 * @return devuelve true si es divisible por 3 si no false
-	 * */
+	 */
 	private boolean isMultipleOf3(int number) {
 		return number %3 == 0;
 	}

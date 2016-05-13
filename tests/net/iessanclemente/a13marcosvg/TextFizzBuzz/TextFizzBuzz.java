@@ -93,8 +93,14 @@ public class TextFizzBuzz {
 	 */  
 	@Test
 	public void fiftyThreeBuzz(){
-		assertEquals("Buzz",fb.evaluate(53));
+		assertEquals("Buzz",fb.evaluate(52));
 	}
+	@Test
+	public void fiftyThreeFizz(){
+		assertEquals("Fizz",fb.evaluate(31));
+	}
+	
+
 }
 
 
