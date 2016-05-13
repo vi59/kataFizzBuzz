@@ -85,6 +85,25 @@ public class TextFizzBuzz {
 	public void thirthyReturnsFizzBuzz(){
 		assertEquals("FizzBuzz",fb.evaluate(30));
 	}
+	
+	//Esto vai para a rama BuzzSiCinco e non se vai ver nin en master nin en FizzSi3
+	
+	/**
+	 * Compruebo con un numero que no es multiplo de 3 o de 5 o de ambos para que devuelva Buzz si contiene un 5
+	 */  
+	@Test
+	public void fiftyThreeFizz(){
+		assertEquals("Fizz",fb.evaluate(31));
+	}
+	
+	/**
+	 * Compruebo con un numero que no es multiplo de 3 o de 5 o de ambos para que devuelva Buzz si contiene un 5
+	 */  
+	@Test
+	public void fiftyTwoBuzz(){
+		assertEquals("Buzz",fb.evaluate(52));
+	}
+	
 }
 
 
