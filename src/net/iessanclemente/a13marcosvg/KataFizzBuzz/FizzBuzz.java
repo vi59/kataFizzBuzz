@@ -15,7 +15,7 @@ public class FizzBuzz {
 		{
 			return "Fizz";
 		}
-		else if (isMultipleOf5(number)) // si el parametro es multiplo de 5 devolverá Fizz
+		else if (isMultipleOf5(number) || Integer.toString(number).contains("5")) // si el parametro es multiplo de 5 o contiene un 5 devolverá Buzz
 		{
 			return "Buzz";
 		}
