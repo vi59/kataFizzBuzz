@@ -37,7 +37,20 @@ public class TextFizzBuzz {
 	public void oneReturnOne() {
 		assertEquals("1",fb.evaluate(1));   
 	}
+	
+	@Test
+	public void twoReturnTwo() {
+		assertEquals("2",fb.evaluate(2));   
+	}
 
+	/**
+	 *Metodo que comprueba  si el al pasar un numero es multiplo de 3
+	 */
+	
+	@Test
+	public void threeReturnsFizz(){
+		assertEquals("Fizz",fb.evaluate(3));
+	}
 }
 
 
