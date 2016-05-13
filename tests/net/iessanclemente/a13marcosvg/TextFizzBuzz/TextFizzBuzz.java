@@ -53,7 +53,7 @@ public class TextFizzBuzz {
 	}
 	
 	/**
-	 *Metodo que comprueba si al pasar un numero es mútiplo de 5 y devuelve Buzz 
+	 *Metodo que comprueba si al pasar un numero es múltiplo de 5 y devuelve Buzz 
 	 */
 	
 	@Test
@@ -61,7 +61,7 @@ public class TextFizzBuzz {
 		assertEquals("Buzz",fb.evaluate(5));
 	}
 	
-	// Realizo un test más para comprobar si 6 y 10 son multiplos de 3 y 5 respectivamente
+	// Realizo dos tests más para comprobar si 6 y 10 son multiplos de 3 y 5 respectivamente
 	@Test
 	public void sixReturnsFizz(){
 		assertEquals("Fizz",fb.evaluate(6));
@@ -70,6 +70,20 @@ public class TextFizzBuzz {
 	@Test
 	public void tenReturnsBuzz(){
 		assertEquals("Buzz",fb.evaluate(10));
+	}
+	
+	/**
+	 *Metodo que comprueba si al pasar un numero es múltiplo de de 3 y 5 
+	 */
+	@Test
+	public void fifteenReturnsFizzBuzz(){
+		assertEquals("FizzBuzz",fb.evaluate(15));
+	}
+	
+	// Realizo un test más para comprobar si 30 es divisible por 3 y 5
+	@Test
+	public void thirthyReturnsFizzBuzz(){
+		assertEquals("FizzBuzz",fb.evaluate(30));
 	}
 }
 

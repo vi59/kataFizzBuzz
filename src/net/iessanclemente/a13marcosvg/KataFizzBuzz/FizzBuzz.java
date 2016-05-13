@@ -7,12 +7,15 @@ public class FizzBuzz {
 	 * @return devuelve el numero convertido a cadena
 	 */
 	public String evaluate(int number){
-		// si el parametro es multiplo de 3 devolverá Fizz
-		if(isMultipleOf3(number))
+		if(isMultipleOf3(number) && isMultipleOf5(number))// si el parametro es multiplo de 3 y multiplo de 5 devolverá FizzBuzz
+		{
+			return "FizzBuzz";
+		}
+		else if(isMultipleOf3(number)) // si el parametro es multiplo de 3 devolverá Fizz
 		{
 			return "Fizz";
 		}
-		else if (isMultipleOf5(number))
+		else if (isMultipleOf5(number)) // si el parametro es multiplo de 5 devolverá Fizz
 		{
 			return "Buzz";
 		}
