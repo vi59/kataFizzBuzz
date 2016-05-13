@@ -44,12 +44,32 @@ public class TextFizzBuzz {
 	}
 
 	/**
-	 *Metodo que comprueba  si el al pasar un numero es multiplo de 3
+	 *Metodo que comprueba  si al pasar un numero es múltiplo de 3 y devuelve Fizz
 	 */
 	
 	@Test
 	public void threeReturnsFizz(){
 		assertEquals("Fizz",fb.evaluate(3));
+	}
+	
+	/**
+	 *Metodo que comprueba si al pasar un numero es mútiplo de 5 y devuelve Buzz 
+	 */
+	
+	@Test
+	public void fiveReturnsBuzz(){
+		assertEquals("Buzz",fb.evaluate(5));
+	}
+	
+	// Realizo un test más para comprobar si 6 y 10 son multiplos de 3 y 5 respectivamente
+	@Test
+	public void sixReturnsFizz(){
+		assertEquals("Fizz",fb.evaluate(6));
+	}
+	
+	@Test
+	public void tenReturnsBuzz(){
+		assertEquals("Buzz",fb.evaluate(10));
 	}
 }
 

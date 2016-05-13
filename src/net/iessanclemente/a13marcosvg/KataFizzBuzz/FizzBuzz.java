@@ -12,7 +12,21 @@ public class FizzBuzz {
 		{
 			return "Fizz";
 		}
+		else if (isMultipleOf5(number))
+		{
+			return "Buzz";
+		}
 		return String.valueOf(number);
+	}
+
+	/**
+	 * Metodo que comprueba si un numero es divisible por 5
+	 * @param number numero introducido como parametro
+	 * @return devuelve true si es divisible por 5 si no false
+	 * */
+		
+	private boolean isMultipleOf5(int number) {
+		return number %5 == 0;
 	}
 	
 	/**
