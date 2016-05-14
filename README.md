@@ -1,5 +1,5 @@
 # kataFizzBuzz
-Autor: Marcos Viqueira
+Autor: Marcos Viqueira <br>
 Version: 0.1
 Fecha realizacion: 14/05/2016
  
